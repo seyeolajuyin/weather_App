@@ -10,38 +10,56 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <link rel="stylesheet" href="./src/styles.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="app-title">
-        <p>weatherPoint</p>
+    <div class="container mt-4">
+      <div class="app-title ">
+        <h3>weatherPoint</h3> 
+        <img src="./src/png/cloudy.svg" class="img-fluid logo-img" alt="" srcset="">
       </div>
       <div class="notification mt-3 text-center"></div>
-      <div class="weather-container mt-3">
-        <div class="weather-icon">
+
+      <div class="card shadow card-section" >
+        <div class="weather-icon mt-2">
           <img
             src="./src/png/Rolling-1s-200px.svg"
-            class="img-fluid img-icon"
+            class="img-fluid img-icon card-img-top"
             alt=""
             srcset=""
           />
         </div>
-        <div class="temperature-value text-center mt-3"></div>
-        <div class="temperature-description text-center">
-          <p>-</p>
-        </div>
-        <div class="location text-center">
-          <p>-</p>
-        </div>
+        
+       <div class="weather-container mt-3 card-body">
+          <h5 class="temperature-value text-center mt-3 card-title"></h5>
+          <div class="card-text">
+            <div class="temperature-description text-center">
+              <p>-</p>
+            </div>
+            <div class="location text-center">
+              <p>-</p>
+            </div>
+          </div>
+          
+          <button class="btn button ">Covert</button>
+        </div> 
+
+      </div>
+
+     
+     
+       
+      
       </div>
     </div>
-    <div>
-      hello
-    </div>
+    
     <script src="./src/vendor.js"></script>
     <script src="./src/main.js"></script>
   </body>
